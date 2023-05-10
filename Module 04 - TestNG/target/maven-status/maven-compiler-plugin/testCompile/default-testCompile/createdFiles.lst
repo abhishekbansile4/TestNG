@@ -1,0 +1,5 @@
+com\epam\testng\ConfigurationTests.class
+com\epam\testng\DataProviderForCalculator.class
+com\epam\testng\CustomTestRunner.class
+com\epam\testng\CalculatorTest.class
+com\epam\testng\Listener.class

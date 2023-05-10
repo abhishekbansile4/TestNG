@@ -1,0 +1,1045 @@
+<html>
+<head>
+<title>TestNG:  Command line test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Command line test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>98/10/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Apr 03 18:14:47 IST 2023</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (143 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifyCos()'><b>verifyCos</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: 720</td>
+<td><div><pre>java.lang.AssertionError: expected [-0.8390387292223656] but found [-0.5440716964379951]
+	at com.epam.testng.CalculatorTest.verifyCos(CalculatorTest.java:102)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.epam.testng.CustomTestRunner.main(CustomTestRunner.java:23)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1546693040", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1546693040'><pre>java.lang.AssertionError: expected [-0.8390387292223656] but found [-0.5440716964379951]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertEquals(Assert.java:727)
+	at org.testng.Assert.assertEquals(Assert.java:774)
+	at com.epam.testng.CalculatorTest.verifyCos(CalculatorTest.java:102)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at com.epam.testng.CustomTestRunner.main(CustomTestRunner.java:23)
+</pre></div></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifyCos()'><b>verifyCos</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: -420</td>
+<td><div><pre>java.lang.AssertionError: expected [0.5624787751985085] but found [0.8268117243068012]
+	at com.epam.testng.CalculatorTest.verifyCos(CalculatorTest.java:102)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.epam.testng.CustomTestRunner.main(CustomTestRunner.java:23)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace128359175", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace128359175'><pre>java.lang.AssertionError: expected [0.5624787751985085] but found [0.8268117243068012]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertEquals(Assert.java:727)
+	at org.testng.Assert.assertEquals(Assert.java:774)
+	at com.epam.testng.CalculatorTest.verifyCos(CalculatorTest.java:102)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at com.epam.testng.CustomTestRunner.main(CustomTestRunner.java:23)
+</pre></div></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifyTg()'><b>verifyTg</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: -420</td>
+<td><div><pre>java.lang.AssertionError: expected [1.4699429752082733] but found [1.0]
+	at com.epam.testng.CalculatorTest.verifyTg(CalculatorTest.java:90)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.epam.testng.CustomTestRunner.main(CustomTestRunner.java:23)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace692331943", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace692331943'><pre>java.lang.AssertionError: expected [1.4699429752082733] but found [1.0]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertEquals(Assert.java:727)
+	at org.testng.Assert.assertEquals(Assert.java:774)
+	at com.epam.testng.CalculatorTest.verifyTg(CalculatorTest.java:90)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at com.epam.testng.CustomTestRunner.main(CustomTestRunner.java:23)
+</pre></div></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifyCos()'><b>verifyCos</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: 30</td>
+<td><div><pre>java.lang.AssertionError: expected [0.15425144988758405] but found [-0.9880316240928618]
+	at com.epam.testng.CalculatorTest.verifyCos(CalculatorTest.java:102)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.epam.testng.CustomTestRunner.main(CustomTestRunner.java:23)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace24119573", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace24119573'><pre>java.lang.AssertionError: expected [0.15425144988758405] but found [-0.9880316240928618]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertEquals(Assert.java:727)
+	at org.testng.Assert.assertEquals(Assert.java:774)
+	at com.epam.testng.CalculatorTest.verifyCos(CalculatorTest.java:102)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at com.epam.testng.CustomTestRunner.main(CustomTestRunner.java:23)
+</pre></div></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifyTg()'><b>verifyTg</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: 0</td>
+<td><div><pre>java.lang.AssertionError: expected [0.0] but found [NaN]
+	at com.epam.testng.CalculatorTest.verifyTg(CalculatorTest.java:90)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.epam.testng.CustomTestRunner.main(CustomTestRunner.java:23)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1287934450", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1287934450'><pre>java.lang.AssertionError: expected [0.0] but found [NaN]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertEquals(Assert.java:727)
+	at org.testng.Assert.assertEquals(Assert.java:774)
+	at com.epam.testng.CalculatorTest.verifyTg(CalculatorTest.java:90)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at com.epam.testng.CustomTestRunner.main(CustomTestRunner.java:23)
+</pre></div></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifyCos()'><b>verifyCos</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: 0</td>
+<td><div><pre>java.lang.AssertionError: expected [1.0] but found [0.0]
+	at com.epam.testng.CalculatorTest.verifyCos(CalculatorTest.java:102)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.epam.testng.CustomTestRunner.main(CustomTestRunner.java:23)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace501187768", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace501187768'><pre>java.lang.AssertionError: expected [1.0] but found [0.0]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertEquals(Assert.java:727)
+	at org.testng.Assert.assertEquals(Assert.java:774)
+	at com.epam.testng.CalculatorTest.verifyCos(CalculatorTest.java:102)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at com.epam.testng.CustomTestRunner.main(CustomTestRunner.java:23)
+</pre></div></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifyTg()'><b>verifyTg</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: 30</td>
+<td><div><pre>java.lang.AssertionError: expected [-6.4053311966462765] but found [1.0]
+	at com.epam.testng.CalculatorTest.verifyTg(CalculatorTest.java:90)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.epam.testng.CustomTestRunner.main(CustomTestRunner.java:23)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2073707154", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2073707154'><pre>java.lang.AssertionError: expected [-6.4053311966462765] but found [1.0]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertEquals(Assert.java:727)
+	at org.testng.Assert.assertEquals(Assert.java:774)
+	at com.epam.testng.CalculatorTest.verifyTg(CalculatorTest.java:90)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at com.epam.testng.CustomTestRunner.main(CustomTestRunner.java:23)
+</pre></div></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifyTg()'><b>verifyTg</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: -45</td>
+<td><div><pre>java.lang.AssertionError: expected [-1.6197751905438615] but found [1.0]
+	at com.epam.testng.CalculatorTest.verifyTg(CalculatorTest.java:90)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.epam.testng.CustomTestRunner.main(CustomTestRunner.java:23)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace6519275", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace6519275'><pre>java.lang.AssertionError: expected [-1.6197751905438615] but found [1.0]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertEquals(Assert.java:727)
+	at org.testng.Assert.assertEquals(Assert.java:774)
+	at com.epam.testng.CalculatorTest.verifyTg(CalculatorTest.java:90)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at com.epam.testng.CustomTestRunner.main(CustomTestRunner.java:23)
+</pre></div></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifyCos()'><b>verifyCos</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: -45</td>
+<td><div><pre>java.lang.AssertionError: expected [0.5253219888177297] but found [-0.8509035245341184]
+	at com.epam.testng.CalculatorTest.verifyCos(CalculatorTest.java:102)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.epam.testng.CustomTestRunner.main(CustomTestRunner.java:23)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace288994035", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace288994035'><pre>java.lang.AssertionError: expected [0.5253219888177297] but found [-0.8509035245341184]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertEquals(Assert.java:727)
+	at org.testng.Assert.assertEquals(Assert.java:774)
+	at com.epam.testng.CalculatorTest.verifyCos(CalculatorTest.java:102)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at com.epam.testng.CustomTestRunner.main(CustomTestRunner.java:23)
+</pre></div></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifyTg()'><b>verifyTg</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: 720</td>
+<td><div><pre>java.lang.AssertionError: expected [0.6484464631832304] but found [1.0]
+	at com.epam.testng.CalculatorTest.verifyTg(CalculatorTest.java:90)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.epam.testng.CustomTestRunner.main(CustomTestRunner.java:23)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace78204644", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace78204644'><pre>java.lang.AssertionError: expected [0.6484464631832304] but found [1.0]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertEquals(Assert.java:727)
+	at org.testng.Assert.assertEquals(Assert.java:774)
+	at com.epam.testng.CalculatorTest.verifyTg(CalculatorTest.java:90)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at com.epam.testng.CustomTestRunner.main(CustomTestRunner.java:23)
+</pre></div></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifyDiv()'><b>verifyDiv</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: -5.5, 9</td>
+<td></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifyMult()'><b>verifyMult</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: 0, 5</td>
+<td></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifyMult()'><b>verifyMult</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: -5, 3</td>
+<td></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifyMult()'><b>verifyMult</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: 2.5, 4.5</td>
+<td></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifySin()'><b>verifySin</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: 0</td>
+<td></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifySqrt()'><b>verifySqrt</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: 1.0</td>
+<td></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifySum()'><b>verifySum</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: 0, 0</td>
+<td></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifySum()'><b>verifySum</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: 5, -3</td>
+<td></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifySin()'><b>verifySin</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: -45</td>
+<td></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifyDivForException()'><b>verifyDivForException</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: 5, 0</td>
+<td></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifyPow()'><b>verifyPow</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: 1.7976931348623157E308, 1.7976931348623157E308</td>
+<td></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifySub()'><b>verifySub</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: 0, 5.95</td>
+<td></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifySub()'><b>verifySub</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: 5.95, 0</td>
+<td></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifyDiv()'><b>verifyDiv</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: 4.9E-324, 1.7976931348623157E308</td>
+<td></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifyIsPositive()'><b>verifyIsPositive</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: 1</td>
+<td></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifyCtg()'><b>verifyCtg</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: -45</td>
+<td></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifyIsPositive()'><b>verifyIsPositive</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: -9223372036854775808</td>
+<td></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifyDiv()'><b>verifyDiv</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: 9223372036854775807, 9223372036854775807</td>
+<td></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifySub()'><b>verifySub</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: 0, 5</td>
+<td></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifyCtg()'><b>verifyCtg</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: 30</td>
+<td></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifySub()'><b>verifySub</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: -5, 3</td>
+<td></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifyPow()'><b>verifyPow</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: 0, 5.95</td>
+<td></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifySum()'><b>verifySum</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: 0, 0</td>
+<td></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifyMult()'><b>verifyMult</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: 5.95, 0</td>
+<td></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifySum()'><b>verifySum</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: 0, 5.95</td>
+<td></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifySub()'><b>verifySub</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: 5.5, -9</td>
+<td></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifySum()'><b>verifySum</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: 5.5, -9</td>
+<td></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifySqrt()'><b>verifySqrt</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: 0</td>
+<td></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifySum()'><b>verifySum</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: 9223372036854775807, 9223372036854775807</td>
+<td></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifySub()'><b>verifySub</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: 9223372036854775807, 9223372036854775807</td>
+<td></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifySum()'><b>verifySum</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: 5, 0</td>
+<td></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifySum()'><b>verifySum</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: 1.7976931348623157E308, 1.7976931348623157E308</td>
+<td></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifyMult()'><b>verifyMult</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: 5.5, -9</td>
+<td></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifyPow()'><b>verifyPow</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: 4.9E-324, 4.9E-324</td>
+<td></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifyMult()'><b>verifyMult</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: 5, -3</td>
+<td></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifyPow()'><b>verifyPow</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: 5.5, -9</td>
+<td></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifySum()'><b>verifySum</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: -9223372036854775808, -9223372036854775808</td>
+<td></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifyIsPositive()'><b>verifyIsPositive</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: 9223372036854775807</td>
+<td></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifySqrt()'><b>verifySqrt</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: 1600</td>
+<td></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifySum()'><b>verifySum</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: -5.5, 9</td>
+<td></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifyDiv()'><b>verifyDiv</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: 1.7976931348623157E308, 4.9E-324</td>
+<td></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifyMult()'><b>verifyMult</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: -9223372036854775808, -9223372036854775808</td>
+<td></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifyMult()'><b>verifyMult</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: 0, 0</td>
+<td></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifyDivForException()'><b>verifyDivForException</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: 5, 0</td>
+<td><div><pre>java.lang.NumberFormatException: Attempt to divide by zero
+	at com.epam.tat.module4.Calculator.div(Calculator.java:34)
+	at com.epam.testng.CalculatorTest.verifyDivForException(CalculatorTest.java:63)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.epam.testng.CustomTestRunner.main(CustomTestRunner.java:23)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1642030774", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1642030774'><pre>java.lang.NumberFormatException: Attempt to divide by zero
+	at com.epam.tat.module4.Calculator.div(Calculator.java:34)
+	at com.epam.testng.CalculatorTest.verifyDivForException(CalculatorTest.java:63)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at com.epam.testng.CustomTestRunner.main(CustomTestRunner.java:23)
+</pre></div></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifySin()'><b>verifySin</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: 720</td>
+<td></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifyIsNegative()'><b>verifyIsNegative</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: -9223372036854775808</td>
+<td></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifyMult()'><b>verifyMult</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: 2, 6</td>
+<td></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifyPow()'><b>verifyPow</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: 0, 0</td>
+<td></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifyDiv()'><b>verifyDiv</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: -1, -4</td>
+<td></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifyDiv()'><b>verifyDiv</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: 5.5, -9</td>
+<td></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifyIsNegative()'><b>verifyIsNegative</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: 9223372036854775807</td>
+<td></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifyMult()'><b>verifyMult</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: -5.5, 9</td>
+<td></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifySum()'><b>verifySum</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: 4.9E-324, 4.9E-324</td>
+<td></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifyDiv()'><b>verifyDiv</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: 2, 6</td>
+<td></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifyDiv()'><b>verifyDiv</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: 0, 5.95</td>
+<td></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifyCtg()'><b>verifyCtg</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: -420</td>
+<td></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifySub()'><b>verifySub</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: 0, 0</td>
+<td></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifySum()'><b>verifySum</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: 2, 6</td>
+<td></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifySin()'><b>verifySin</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: -420</td>
+<td></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifySub()'><b>verifySub</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: 5, 0</td>
+<td></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifySum()'><b>verifySum</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: 2.5, 4.5</td>
+<td></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifySub()'><b>verifySub</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: 1.7976931348623157E308, 1.7976931348623157E308</td>
+<td></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifySqrt()'><b>verifySqrt</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: -25</td>
+<td></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifyIsNegative()'><b>verifyIsNegative</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: 0</td>
+<td></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifySin()'><b>verifySin</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: 30</td>
+<td></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifySum()'><b>verifySum</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: 0, 5</td>
+<td></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifySub()'><b>verifySub</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: -9223372036854775808, -9223372036854775808</td>
+<td></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifyDivForException()'><b>verifyDivForException</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: 0, 0</td>
+<td></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifyCtg()'><b>verifyCtg</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: 720</td>
+<td></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifyDivForException()'><b>verifyDivForException</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: 0, 0</td>
+<td><div><pre>java.lang.NumberFormatException: Attempt to divide by zero
+	at com.epam.tat.module4.Calculator.div(Calculator.java:34)
+	at com.epam.testng.CalculatorTest.verifyDivForException(CalculatorTest.java:63)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.epam.testng.CustomTestRunner.main(CustomTestRunner.java:23)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1357563986", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1357563986'><pre>java.lang.NumberFormatException: Attempt to divide by zero
+	at com.epam.tat.module4.Calculator.div(Calculator.java:34)
+	at com.epam.testng.CalculatorTest.verifyDivForException(CalculatorTest.java:63)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at com.epam.testng.CustomTestRunner.main(CustomTestRunner.java:23)
+</pre></div></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifyPow()'><b>verifyPow</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: 2.5, 4.5</td>
+<td></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifyMult()'><b>verifyMult</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: 0, 0</td>
+<td></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifyMult()'><b>verifyMult</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: 9223372036854775807, 9223372036854775807</td>
+<td></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifyIsNegative()'><b>verifyIsNegative</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: -1</td>
+<td></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifyMult()'><b>verifyMult</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: 0, 5.95</td>
+<td></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifyCtg()'><b>verifyCtg</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: 0</td>
+<td></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifyMult()'><b>verifyMult</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: 5, 0</td>
+<td></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifySqrt()'><b>verifySqrt</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: 25</td>
+<td></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifyMult()'><b>verifyMult</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: 4.9E-324, 4.9E-324</td>
+<td></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifySub()'><b>verifySub</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: 4.9E-324, 4.9E-324</td>
+<td></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifyDiv()'><b>verifyDiv</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: 2.5, 4.5</td>
+<td></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifyDiv()'><b>verifyDiv</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: -5, 3</td>
+<td></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifySum()'><b>verifySum</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: 5.95, 0</td>
+<td></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifySub()'><b>verifySub</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: 5, -3</td>
+<td></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifyDiv()'><b>verifyDiv</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: -9223372036854775808, -9223372036854775808</td>
+<td></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifyMult()'><b>verifyMult</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: 1.7976931348623157E308, 1.7976931348623157E308</td>
+<td></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifySub()'><b>verifySub</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: 2, 6</td>
+<td></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifySub()'><b>verifySub</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: -5.5, 9</td>
+<td></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifySub()'><b>verifySub</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: 0, 0</td>
+<td></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifyIsPositive()'><b>verifyIsPositive</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: 0</td>
+<td></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifyPow()'><b>verifyPow</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: -5.5, 9</td>
+<td></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifySub()'><b>verifySub</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: 2.5, 4.5</td>
+<td></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifyDiv()'><b>verifyDiv</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: 5, -3</td>
+<td></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifyIsPositive()'><b>verifyIsPositive</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: -1</td>
+<td></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifyDiv()'><b>verifyDiv</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: 0, 5</td>
+<td></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifyPow()'><b>verifyPow</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: 5.95, 0</td>
+<td></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifySum()'><b>verifySum</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: -5, 3</td>
+<td></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+<tr>
+<td title='com.epam.testng.CalculatorTest.verifyIsNegative()'><b>verifyIsNegative</b><br>Test class: com.epam.testng.CalculatorTest<br>Parameters: 1</td>
+<td></td>
+<td>0</td>
+<td>com.epam.testng.CalculatorTest@6b1274d2</td></tr>
+</table><p>
+</body>
+</html>

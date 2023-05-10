@@ -1,0 +1,2709 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">2 suites, 10 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Command_line_suite" class="navigator-link">
+              <span class="suite-name border-failed">Command line suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Command_line_suite" class="navigator-link ">
+                    <span>[unset file name]</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Command_line_suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Command_line_suite" class="navigator-link ">
+                    <span>2 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Command_line_suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Command_line_suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Command_line_suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Command_line_suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">108 methods, 10 failed,   98 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Command_line_suite" class="hide-methods failed suite-Command_line_suite"> (hide)</a> <!-- hide-methods failed suite-Command_line_suite -->
+                      <a href="#" panel-name="suite-Command_line_suite" class="show-methods failed suite-Command_line_suite"> (show)</a> <!-- show-methods failed suite-Command_line_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Command_line_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifyCos(720)">verifyCos(720)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifyCos(-420)">verifyCos(-420)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifyCos(30)">verifyCos(30)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifyCos(0)">verifyCos(0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifyCos(-45)">verifyCos(-45)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifyTg(-420)">verifyTg(-420)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifyTg(0)">verifyTg(0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifyTg(30)">verifyTg(30)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifyTg(-45)">verifyTg(-45)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifyTg(720)">verifyTg(720)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Command_line_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Command_line_suite" class="hide-methods passed suite-Command_line_suite"> (hide)</a> <!-- hide-methods passed suite-Command_line_suite -->
+                      <a href="#" panel-name="suite-Command_line_suite" class="show-methods passed suite-Command_line_suite"> (show)</a> <!-- show-methods passed suite-Command_line_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Command_line_suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifyCtg(-45)">verifyCtg(-45)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifyCtg(30)">verifyCtg(30)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifyCtg(-420)">verifyCtg(-420)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifyCtg(720)">verifyCtg(720)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifyCtg(0)">verifyCtg(0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifyDiv(-5.5, 9)">verifyDiv(-5.5, 9)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifyDiv(4.9E-324, 1.7976931348623157E308)">verifyDiv(4.9E-324, 1.7976931348623157E308)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifyDiv(9223372036854775807, 9223372036854775807)">verifyDiv(9223372036854775807, 9223372036854775807)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifyDiv(1.7976931348623157E308, 4.9E-324)">verifyDiv(1.7976931348623157E308, 4.9E-324)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifyDiv(-1, -4)">verifyDiv(-1, -4)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifyDiv(5.5, -9)">verifyDiv(5.5, -9)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifyDiv(2, 6)">verifyDiv(2, 6)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifyDiv(0, 5.95)">verifyDiv(0, 5.95)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifyDiv(2.5, 4.5)">verifyDiv(2.5, 4.5)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifyDiv(-5, 3)">verifyDiv(-5, 3)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifyDiv(-9223372036854775808, -9223372036854775808)">verifyDiv(-9223372036854775808, -9223372036854775808)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifyDiv(5, -3)">verifyDiv(5, -3)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifyDiv(0, 5)">verifyDiv(0, 5)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifyDivForException(5, 0)">verifyDivForException(5, 0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifyDivForException(5, 0)">verifyDivForException(5, 0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifyDivForException(0, 0)">verifyDivForException(0, 0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifyDivForException(0, 0)">verifyDivForException(0, 0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifyIsNegative(-9223372036854775808)">verifyIsNegative(-9223372036854775808)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifyIsNegative(9223372036854775807)">verifyIsNegative(9223372036854775807)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifyIsNegative(0)">verifyIsNegative(0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifyIsNegative(-1)">verifyIsNegative(-1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifyIsNegative(1)">verifyIsNegative(1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifyIsPositive(1)">verifyIsPositive(1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifyIsPositive(-9223372036854775808)">verifyIsPositive(-9223372036854775808)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifyIsPositive(9223372036854775807)">verifyIsPositive(9223372036854775807)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifyIsPositive(0)">verifyIsPositive(0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifyIsPositive(-1)">verifyIsPositive(-1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifyMult(0, 5)">verifyMult(0, 5)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifyMult(-5, 3)">verifyMult(-5, 3)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifyMult(2.5, 4.5)">verifyMult(2.5, 4.5)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifyMult(5.95, 0)">verifyMult(5.95, 0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifyMult(5.5, -9)">verifyMult(5.5, -9)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifyMult(5, -3)">verifyMult(5, -3)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifyMult(-9223372036854775808, -9223372036854775808)">verifyMult(-9223372036854775808, -9223372036854775808)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifyMult(0, 0)">verifyMult(0, 0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifyMult(2, 6)">verifyMult(2, 6)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifyMult(-5.5, 9)">verifyMult(-5.5, 9)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifyMult(0, 0)">verifyMult(0, 0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifyMult(9223372036854775807, 9223372036854775807)">verifyMult(9223372036854775807, 9223372036854775807)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifyMult(0, 5.95)">verifyMult(0, 5.95)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifyMult(5, 0)">verifyMult(5, 0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifyMult(4.9E-324, 4.9E-324)">verifyMult(4.9E-324, 4.9E-324)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifyMult(1.7976931348623157E308, 1.7976931348623157E308)">verifyMult(1.7976931348623157E308, 1.7976931348623157E308)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifyPow(1.7976931348623157E308, 1.7976931348623157E308)">verifyPow(1.7976931348623157E308, 1.7976931348623157E308)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifyPow(0, 5.95)">verifyPow(0, 5.95)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifyPow(4.9E-324, 4.9E-324)">verifyPow(4.9E-324, 4.9E-324)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifyPow(5.5, -9)">verifyPow(5.5, -9)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifyPow(0, 0)">verifyPow(0, 0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifyPow(2.5, 4.5)">verifyPow(2.5, 4.5)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifyPow(-5.5, 9)">verifyPow(-5.5, 9)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifyPow(5.95, 0)">verifyPow(5.95, 0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifySin(0)">verifySin(0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifySin(-45)">verifySin(-45)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifySin(720)">verifySin(720)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifySin(-420)">verifySin(-420)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifySin(30)">verifySin(30)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifySqrt(1.0)">verifySqrt(1.0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifySqrt(0)">verifySqrt(0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifySqrt(1600)">verifySqrt(1600)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifySqrt(-25)">verifySqrt(-25)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifySqrt(25)">verifySqrt(25)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifySub(0, 5.95)">verifySub(0, 5.95)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifySub(5.95, 0)">verifySub(5.95, 0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifySub(0, 5)">verifySub(0, 5)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifySub(-5, 3)">verifySub(-5, 3)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifySub(5.5, -9)">verifySub(5.5, -9)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifySub(9223372036854775807, 9223372036854775807)">verifySub(9223372036854775807, 9223372036854775807)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifySub(0, 0)">verifySub(0, 0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifySub(5, 0)">verifySub(5, 0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifySub(1.7976931348623157E308, 1.7976931348623157E308)">verifySub(1.7976931348623157E308, 1.7976931348623157E308)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifySub(-9223372036854775808, -9223372036854775808)">verifySub(-9223372036854775808, -9223372036854775808)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifySub(4.9E-324, 4.9E-324)">verifySub(4.9E-324, 4.9E-324)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifySub(5, -3)">verifySub(5, -3)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifySub(2, 6)">verifySub(2, 6)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifySub(-5.5, 9)">verifySub(-5.5, 9)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifySub(0, 0)">verifySub(0, 0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifySub(2.5, 4.5)">verifySub(2.5, 4.5)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifySum(0, 0)">verifySum(0, 0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifySum(5, -3)">verifySum(5, -3)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifySum(0, 0)">verifySum(0, 0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifySum(0, 5.95)">verifySum(0, 5.95)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifySum(5.5, -9)">verifySum(5.5, -9)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifySum(9223372036854775807, 9223372036854775807)">verifySum(9223372036854775807, 9223372036854775807)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifySum(5, 0)">verifySum(5, 0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifySum(1.7976931348623157E308, 1.7976931348623157E308)">verifySum(1.7976931348623157E308, 1.7976931348623157E308)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifySum(-9223372036854775808, -9223372036854775808)">verifySum(-9223372036854775808, -9223372036854775808)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifySum(-5.5, 9)">verifySum(-5.5, 9)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifySum(4.9E-324, 4.9E-324)">verifySum(4.9E-324, 4.9E-324)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifySum(2, 6)">verifySum(2, 6)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifySum(2.5, 4.5)">verifySum(2.5, 4.5)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifySum(0, 5)">verifySum(0, 5)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifySum(5.95, 0)">verifySum(5.95, 0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.testng.CalculatorTest" class="method navigator-link" hash-for-method="verifySum(-5, 3)">verifySum(-5, 3)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Command_line_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Command_line_suite" class="panel Command_line_suite">
+          <div class="suite-Command_line_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.epam.testng.CalculatorTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyCos(720)">
+                  </a> <!-- verifyCos(720) -->
+                  <span class="method-name">verifyCos</span>
+                  <span class="parameters">(720)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [-0.8390387292223656] but found [-0.5440716964379951]
+	at com.epam.testng.CalculatorTest.verifyCos(CalculatorTest.java:102)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.epam.testng.CustomTestRunner.main(CustomTestRunner.java:23)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyCos(-420)">
+                  </a> <!-- verifyCos(-420) -->
+                  <span class="method-name">verifyCos</span>
+                  <span class="parameters">(-420)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [0.5624787751985085] but found [0.8268117243068012]
+	at com.epam.testng.CalculatorTest.verifyCos(CalculatorTest.java:102)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.epam.testng.CustomTestRunner.main(CustomTestRunner.java:23)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyCos(30)">
+                  </a> <!-- verifyCos(30) -->
+                  <span class="method-name">verifyCos</span>
+                  <span class="parameters">(30)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [0.15425144988758405] but found [-0.9880316240928618]
+	at com.epam.testng.CalculatorTest.verifyCos(CalculatorTest.java:102)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.epam.testng.CustomTestRunner.main(CustomTestRunner.java:23)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyCos(0)">
+                  </a> <!-- verifyCos(0) -->
+                  <span class="method-name">verifyCos</span>
+                  <span class="parameters">(0)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [1.0] but found [0.0]
+	at com.epam.testng.CalculatorTest.verifyCos(CalculatorTest.java:102)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.epam.testng.CustomTestRunner.main(CustomTestRunner.java:23)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyCos(-45)">
+                  </a> <!-- verifyCos(-45) -->
+                  <span class="method-name">verifyCos</span>
+                  <span class="parameters">(-45)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [0.5253219888177297] but found [-0.8509035245341184]
+	at com.epam.testng.CalculatorTest.verifyCos(CalculatorTest.java:102)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.epam.testng.CustomTestRunner.main(CustomTestRunner.java:23)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyTg(-420)">
+                  </a> <!-- verifyTg(-420) -->
+                  <span class="method-name">verifyTg</span>
+                  <span class="parameters">(-420)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [1.4699429752082733] but found [1.0]
+	at com.epam.testng.CalculatorTest.verifyTg(CalculatorTest.java:90)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.epam.testng.CustomTestRunner.main(CustomTestRunner.java:23)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyTg(0)">
+                  </a> <!-- verifyTg(0) -->
+                  <span class="method-name">verifyTg</span>
+                  <span class="parameters">(0)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [0.0] but found [NaN]
+	at com.epam.testng.CalculatorTest.verifyTg(CalculatorTest.java:90)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.epam.testng.CustomTestRunner.main(CustomTestRunner.java:23)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyTg(30)">
+                  </a> <!-- verifyTg(30) -->
+                  <span class="method-name">verifyTg</span>
+                  <span class="parameters">(30)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [-6.4053311966462765] but found [1.0]
+	at com.epam.testng.CalculatorTest.verifyTg(CalculatorTest.java:90)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.epam.testng.CustomTestRunner.main(CustomTestRunner.java:23)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyTg(-45)">
+                  </a> <!-- verifyTg(-45) -->
+                  <span class="method-name">verifyTg</span>
+                  <span class="parameters">(-45)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [-1.6197751905438615] but found [1.0]
+	at com.epam.testng.CalculatorTest.verifyTg(CalculatorTest.java:90)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.epam.testng.CustomTestRunner.main(CustomTestRunner.java:23)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyTg(720)">
+                  </a> <!-- verifyTg(720) -->
+                  <span class="method-name">verifyTg</span>
+                  <span class="parameters">(720)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [0.6484464631832304] but found [1.0]
+	at com.epam.testng.CalculatorTest.verifyTg(CalculatorTest.java:90)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.epam.testng.CustomTestRunner.main(CustomTestRunner.java:23)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-failed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.epam.testng.CalculatorTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyCtg(-45)">
+                  </a> <!-- verifyCtg(-45) -->
+                  <span class="method-name">verifyCtg</span>
+                  <span class="parameters">(-45)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyCtg(30)">
+                  </a> <!-- verifyCtg(30) -->
+                  <span class="method-name">verifyCtg</span>
+                  <span class="parameters">(30)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyCtg(-420)">
+                  </a> <!-- verifyCtg(-420) -->
+                  <span class="method-name">verifyCtg</span>
+                  <span class="parameters">(-420)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyCtg(720)">
+                  </a> <!-- verifyCtg(720) -->
+                  <span class="method-name">verifyCtg</span>
+                  <span class="parameters">(720)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyCtg(0)">
+                  </a> <!-- verifyCtg(0) -->
+                  <span class="method-name">verifyCtg</span>
+                  <span class="parameters">(0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyDiv(-5.5, 9)">
+                  </a> <!-- verifyDiv(-5.5, 9) -->
+                  <span class="method-name">verifyDiv</span>
+                  <span class="parameters">(-5.5,9)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyDiv(4.9E-324, 1.7976931348623157E308)">
+                  </a> <!-- verifyDiv(4.9E-324, 1.7976931348623157E308) -->
+                  <span class="method-name">verifyDiv</span>
+                  <span class="parameters">(4.9E-324,1.7976931348623157E308)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyDiv(9223372036854775807, 9223372036854775807)">
+                  </a> <!-- verifyDiv(9223372036854775807, 9223372036854775807) -->
+                  <span class="method-name">verifyDiv</span>
+                  <span class="parameters">(9223372036854775807,9223372036854775807)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyDiv(1.7976931348623157E308, 4.9E-324)">
+                  </a> <!-- verifyDiv(1.7976931348623157E308, 4.9E-324) -->
+                  <span class="method-name">verifyDiv</span>
+                  <span class="parameters">(1.7976931348623157E308,4.9E-324)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyDiv(-1, -4)">
+                  </a> <!-- verifyDiv(-1, -4) -->
+                  <span class="method-name">verifyDiv</span>
+                  <span class="parameters">(-1,-4)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyDiv(5.5, -9)">
+                  </a> <!-- verifyDiv(5.5, -9) -->
+                  <span class="method-name">verifyDiv</span>
+                  <span class="parameters">(5.5,-9)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyDiv(2, 6)">
+                  </a> <!-- verifyDiv(2, 6) -->
+                  <span class="method-name">verifyDiv</span>
+                  <span class="parameters">(2,6)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyDiv(0, 5.95)">
+                  </a> <!-- verifyDiv(0, 5.95) -->
+                  <span class="method-name">verifyDiv</span>
+                  <span class="parameters">(0,5.95)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyDiv(2.5, 4.5)">
+                  </a> <!-- verifyDiv(2.5, 4.5) -->
+                  <span class="method-name">verifyDiv</span>
+                  <span class="parameters">(2.5,4.5)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyDiv(-5, 3)">
+                  </a> <!-- verifyDiv(-5, 3) -->
+                  <span class="method-name">verifyDiv</span>
+                  <span class="parameters">(-5,3)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyDiv(-9223372036854775808, -9223372036854775808)">
+                  </a> <!-- verifyDiv(-9223372036854775808, -9223372036854775808) -->
+                  <span class="method-name">verifyDiv</span>
+                  <span class="parameters">(-9223372036854775808,-9223372036854775808)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyDiv(5, -3)">
+                  </a> <!-- verifyDiv(5, -3) -->
+                  <span class="method-name">verifyDiv</span>
+                  <span class="parameters">(5,-3)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyDiv(0, 5)">
+                  </a> <!-- verifyDiv(0, 5) -->
+                  <span class="method-name">verifyDiv</span>
+                  <span class="parameters">(0,5)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyDivForException(5, 0)">
+                  </a> <!-- verifyDivForException(5, 0) -->
+                  <span class="method-name">verifyDivForException</span>
+                  <span class="parameters">(5,0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyDivForException(5, 0)">
+                  </a> <!-- verifyDivForException(5, 0) -->
+                  <span class="method-name">verifyDivForException</span>
+                  <span class="parameters">(5,0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyDivForException(0, 0)">
+                  </a> <!-- verifyDivForException(0, 0) -->
+                  <span class="method-name">verifyDivForException</span>
+                  <span class="parameters">(0,0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyDivForException(0, 0)">
+                  </a> <!-- verifyDivForException(0, 0) -->
+                  <span class="method-name">verifyDivForException</span>
+                  <span class="parameters">(0,0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyIsNegative(-9223372036854775808)">
+                  </a> <!-- verifyIsNegative(-9223372036854775808) -->
+                  <span class="method-name">verifyIsNegative</span>
+                  <span class="parameters">(-9223372036854775808)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyIsNegative(9223372036854775807)">
+                  </a> <!-- verifyIsNegative(9223372036854775807) -->
+                  <span class="method-name">verifyIsNegative</span>
+                  <span class="parameters">(9223372036854775807)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyIsNegative(0)">
+                  </a> <!-- verifyIsNegative(0) -->
+                  <span class="method-name">verifyIsNegative</span>
+                  <span class="parameters">(0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyIsNegative(-1)">
+                  </a> <!-- verifyIsNegative(-1) -->
+                  <span class="method-name">verifyIsNegative</span>
+                  <span class="parameters">(-1)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyIsNegative(1)">
+                  </a> <!-- verifyIsNegative(1) -->
+                  <span class="method-name">verifyIsNegative</span>
+                  <span class="parameters">(1)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyIsPositive(1)">
+                  </a> <!-- verifyIsPositive(1) -->
+                  <span class="method-name">verifyIsPositive</span>
+                  <span class="parameters">(1)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyIsPositive(-9223372036854775808)">
+                  </a> <!-- verifyIsPositive(-9223372036854775808) -->
+                  <span class="method-name">verifyIsPositive</span>
+                  <span class="parameters">(-9223372036854775808)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyIsPositive(9223372036854775807)">
+                  </a> <!-- verifyIsPositive(9223372036854775807) -->
+                  <span class="method-name">verifyIsPositive</span>
+                  <span class="parameters">(9223372036854775807)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyIsPositive(0)">
+                  </a> <!-- verifyIsPositive(0) -->
+                  <span class="method-name">verifyIsPositive</span>
+                  <span class="parameters">(0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyIsPositive(-1)">
+                  </a> <!-- verifyIsPositive(-1) -->
+                  <span class="method-name">verifyIsPositive</span>
+                  <span class="parameters">(-1)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMult(0, 5)">
+                  </a> <!-- verifyMult(0, 5) -->
+                  <span class="method-name">verifyMult</span>
+                  <span class="parameters">(0,5)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMult(-5, 3)">
+                  </a> <!-- verifyMult(-5, 3) -->
+                  <span class="method-name">verifyMult</span>
+                  <span class="parameters">(-5,3)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMult(2.5, 4.5)">
+                  </a> <!-- verifyMult(2.5, 4.5) -->
+                  <span class="method-name">verifyMult</span>
+                  <span class="parameters">(2.5,4.5)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMult(5.95, 0)">
+                  </a> <!-- verifyMult(5.95, 0) -->
+                  <span class="method-name">verifyMult</span>
+                  <span class="parameters">(5.95,0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMult(5.5, -9)">
+                  </a> <!-- verifyMult(5.5, -9) -->
+                  <span class="method-name">verifyMult</span>
+                  <span class="parameters">(5.5,-9)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMult(5, -3)">
+                  </a> <!-- verifyMult(5, -3) -->
+                  <span class="method-name">verifyMult</span>
+                  <span class="parameters">(5,-3)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMult(-9223372036854775808, -9223372036854775808)">
+                  </a> <!-- verifyMult(-9223372036854775808, -9223372036854775808) -->
+                  <span class="method-name">verifyMult</span>
+                  <span class="parameters">(-9223372036854775808,-9223372036854775808)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMult(0, 0)">
+                  </a> <!-- verifyMult(0, 0) -->
+                  <span class="method-name">verifyMult</span>
+                  <span class="parameters">(0,0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMult(2, 6)">
+                  </a> <!-- verifyMult(2, 6) -->
+                  <span class="method-name">verifyMult</span>
+                  <span class="parameters">(2,6)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMult(-5.5, 9)">
+                  </a> <!-- verifyMult(-5.5, 9) -->
+                  <span class="method-name">verifyMult</span>
+                  <span class="parameters">(-5.5,9)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMult(0, 0)">
+                  </a> <!-- verifyMult(0, 0) -->
+                  <span class="method-name">verifyMult</span>
+                  <span class="parameters">(0,0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMult(9223372036854775807, 9223372036854775807)">
+                  </a> <!-- verifyMult(9223372036854775807, 9223372036854775807) -->
+                  <span class="method-name">verifyMult</span>
+                  <span class="parameters">(9223372036854775807,9223372036854775807)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMult(0, 5.95)">
+                  </a> <!-- verifyMult(0, 5.95) -->
+                  <span class="method-name">verifyMult</span>
+                  <span class="parameters">(0,5.95)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMult(5, 0)">
+                  </a> <!-- verifyMult(5, 0) -->
+                  <span class="method-name">verifyMult</span>
+                  <span class="parameters">(5,0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMult(4.9E-324, 4.9E-324)">
+                  </a> <!-- verifyMult(4.9E-324, 4.9E-324) -->
+                  <span class="method-name">verifyMult</span>
+                  <span class="parameters">(4.9E-324,4.9E-324)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMult(1.7976931348623157E308, 1.7976931348623157E308)">
+                  </a> <!-- verifyMult(1.7976931348623157E308, 1.7976931348623157E308) -->
+                  <span class="method-name">verifyMult</span>
+                  <span class="parameters">(1.7976931348623157E308,1.7976931348623157E308)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyPow(1.7976931348623157E308, 1.7976931348623157E308)">
+                  </a> <!-- verifyPow(1.7976931348623157E308, 1.7976931348623157E308) -->
+                  <span class="method-name">verifyPow</span>
+                  <span class="parameters">(1.7976931348623157E308,1.7976931348623157E308)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyPow(0, 5.95)">
+                  </a> <!-- verifyPow(0, 5.95) -->
+                  <span class="method-name">verifyPow</span>
+                  <span class="parameters">(0,5.95)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyPow(4.9E-324, 4.9E-324)">
+                  </a> <!-- verifyPow(4.9E-324, 4.9E-324) -->
+                  <span class="method-name">verifyPow</span>
+                  <span class="parameters">(4.9E-324,4.9E-324)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyPow(5.5, -9)">
+                  </a> <!-- verifyPow(5.5, -9) -->
+                  <span class="method-name">verifyPow</span>
+                  <span class="parameters">(5.5,-9)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyPow(0, 0)">
+                  </a> <!-- verifyPow(0, 0) -->
+                  <span class="method-name">verifyPow</span>
+                  <span class="parameters">(0,0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyPow(2.5, 4.5)">
+                  </a> <!-- verifyPow(2.5, 4.5) -->
+                  <span class="method-name">verifyPow</span>
+                  <span class="parameters">(2.5,4.5)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyPow(-5.5, 9)">
+                  </a> <!-- verifyPow(-5.5, 9) -->
+                  <span class="method-name">verifyPow</span>
+                  <span class="parameters">(-5.5,9)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyPow(5.95, 0)">
+                  </a> <!-- verifyPow(5.95, 0) -->
+                  <span class="method-name">verifyPow</span>
+                  <span class="parameters">(5.95,0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySin(0)">
+                  </a> <!-- verifySin(0) -->
+                  <span class="method-name">verifySin</span>
+                  <span class="parameters">(0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySin(-45)">
+                  </a> <!-- verifySin(-45) -->
+                  <span class="method-name">verifySin</span>
+                  <span class="parameters">(-45)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySin(720)">
+                  </a> <!-- verifySin(720) -->
+                  <span class="method-name">verifySin</span>
+                  <span class="parameters">(720)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySin(-420)">
+                  </a> <!-- verifySin(-420) -->
+                  <span class="method-name">verifySin</span>
+                  <span class="parameters">(-420)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySin(30)">
+                  </a> <!-- verifySin(30) -->
+                  <span class="method-name">verifySin</span>
+                  <span class="parameters">(30)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySqrt(1.0)">
+                  </a> <!-- verifySqrt(1.0) -->
+                  <span class="method-name">verifySqrt</span>
+                  <span class="parameters">(1.0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySqrt(0)">
+                  </a> <!-- verifySqrt(0) -->
+                  <span class="method-name">verifySqrt</span>
+                  <span class="parameters">(0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySqrt(1600)">
+                  </a> <!-- verifySqrt(1600) -->
+                  <span class="method-name">verifySqrt</span>
+                  <span class="parameters">(1600)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySqrt(-25)">
+                  </a> <!-- verifySqrt(-25) -->
+                  <span class="method-name">verifySqrt</span>
+                  <span class="parameters">(-25)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySqrt(25)">
+                  </a> <!-- verifySqrt(25) -->
+                  <span class="method-name">verifySqrt</span>
+                  <span class="parameters">(25)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySub(0, 5.95)">
+                  </a> <!-- verifySub(0, 5.95) -->
+                  <span class="method-name">verifySub</span>
+                  <span class="parameters">(0,5.95)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySub(5.95, 0)">
+                  </a> <!-- verifySub(5.95, 0) -->
+                  <span class="method-name">verifySub</span>
+                  <span class="parameters">(5.95,0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySub(0, 5)">
+                  </a> <!-- verifySub(0, 5) -->
+                  <span class="method-name">verifySub</span>
+                  <span class="parameters">(0,5)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySub(-5, 3)">
+                  </a> <!-- verifySub(-5, 3) -->
+                  <span class="method-name">verifySub</span>
+                  <span class="parameters">(-5,3)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySub(5.5, -9)">
+                  </a> <!-- verifySub(5.5, -9) -->
+                  <span class="method-name">verifySub</span>
+                  <span class="parameters">(5.5,-9)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySub(9223372036854775807, 9223372036854775807)">
+                  </a> <!-- verifySub(9223372036854775807, 9223372036854775807) -->
+                  <span class="method-name">verifySub</span>
+                  <span class="parameters">(9223372036854775807,9223372036854775807)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySub(0, 0)">
+                  </a> <!-- verifySub(0, 0) -->
+                  <span class="method-name">verifySub</span>
+                  <span class="parameters">(0,0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySub(5, 0)">
+                  </a> <!-- verifySub(5, 0) -->
+                  <span class="method-name">verifySub</span>
+                  <span class="parameters">(5,0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySub(1.7976931348623157E308, 1.7976931348623157E308)">
+                  </a> <!-- verifySub(1.7976931348623157E308, 1.7976931348623157E308) -->
+                  <span class="method-name">verifySub</span>
+                  <span class="parameters">(1.7976931348623157E308,1.7976931348623157E308)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySub(-9223372036854775808, -9223372036854775808)">
+                  </a> <!-- verifySub(-9223372036854775808, -9223372036854775808) -->
+                  <span class="method-name">verifySub</span>
+                  <span class="parameters">(-9223372036854775808,-9223372036854775808)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySub(4.9E-324, 4.9E-324)">
+                  </a> <!-- verifySub(4.9E-324, 4.9E-324) -->
+                  <span class="method-name">verifySub</span>
+                  <span class="parameters">(4.9E-324,4.9E-324)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySub(5, -3)">
+                  </a> <!-- verifySub(5, -3) -->
+                  <span class="method-name">verifySub</span>
+                  <span class="parameters">(5,-3)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySub(2, 6)">
+                  </a> <!-- verifySub(2, 6) -->
+                  <span class="method-name">verifySub</span>
+                  <span class="parameters">(2,6)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySub(-5.5, 9)">
+                  </a> <!-- verifySub(-5.5, 9) -->
+                  <span class="method-name">verifySub</span>
+                  <span class="parameters">(-5.5,9)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySub(0, 0)">
+                  </a> <!-- verifySub(0, 0) -->
+                  <span class="method-name">verifySub</span>
+                  <span class="parameters">(0,0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySub(2.5, 4.5)">
+                  </a> <!-- verifySub(2.5, 4.5) -->
+                  <span class="method-name">verifySub</span>
+                  <span class="parameters">(2.5,4.5)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySum(0, 0)">
+                  </a> <!-- verifySum(0, 0) -->
+                  <span class="method-name">verifySum</span>
+                  <span class="parameters">(0,0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySum(5, -3)">
+                  </a> <!-- verifySum(5, -3) -->
+                  <span class="method-name">verifySum</span>
+                  <span class="parameters">(5,-3)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySum(0, 0)">
+                  </a> <!-- verifySum(0, 0) -->
+                  <span class="method-name">verifySum</span>
+                  <span class="parameters">(0,0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySum(0, 5.95)">
+                  </a> <!-- verifySum(0, 5.95) -->
+                  <span class="method-name">verifySum</span>
+                  <span class="parameters">(0,5.95)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySum(5.5, -9)">
+                  </a> <!-- verifySum(5.5, -9) -->
+                  <span class="method-name">verifySum</span>
+                  <span class="parameters">(5.5,-9)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySum(9223372036854775807, 9223372036854775807)">
+                  </a> <!-- verifySum(9223372036854775807, 9223372036854775807) -->
+                  <span class="method-name">verifySum</span>
+                  <span class="parameters">(9223372036854775807,9223372036854775807)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySum(5, 0)">
+                  </a> <!-- verifySum(5, 0) -->
+                  <span class="method-name">verifySum</span>
+                  <span class="parameters">(5,0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySum(1.7976931348623157E308, 1.7976931348623157E308)">
+                  </a> <!-- verifySum(1.7976931348623157E308, 1.7976931348623157E308) -->
+                  <span class="method-name">verifySum</span>
+                  <span class="parameters">(1.7976931348623157E308,1.7976931348623157E308)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySum(-9223372036854775808, -9223372036854775808)">
+                  </a> <!-- verifySum(-9223372036854775808, -9223372036854775808) -->
+                  <span class="method-name">verifySum</span>
+                  <span class="parameters">(-9223372036854775808,-9223372036854775808)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySum(-5.5, 9)">
+                  </a> <!-- verifySum(-5.5, 9) -->
+                  <span class="method-name">verifySum</span>
+                  <span class="parameters">(-5.5,9)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySum(4.9E-324, 4.9E-324)">
+                  </a> <!-- verifySum(4.9E-324, 4.9E-324) -->
+                  <span class="method-name">verifySum</span>
+                  <span class="parameters">(4.9E-324,4.9E-324)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySum(2, 6)">
+                  </a> <!-- verifySum(2, 6) -->
+                  <span class="method-name">verifySum</span>
+                  <span class="parameters">(2,6)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySum(2.5, 4.5)">
+                  </a> <!-- verifySum(2.5, 4.5) -->
+                  <span class="method-name">verifySum</span>
+                  <span class="parameters">(2.5,4.5)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySum(0, 5)">
+                  </a> <!-- verifySum(0, 5) -->
+                  <span class="method-name">verifySum</span>
+                  <span class="parameters">(0,5)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySum(5.95, 0)">
+                  </a> <!-- verifySum(5.95, 0) -->
+                  <span class="method-name">verifySum</span>
+                  <span class="parameters">(5.95,0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySum(-5, 3)">
+                  </a> <!-- verifySum(-5, 3) -->
+                  <span class="method-name">verifySum</span>
+                  <span class="parameters">(-5,3)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+        </div> <!-- panel Command_line_suite -->
+        <div panel-name="suite-Default_Suite" class="panel Default_Suite">
+        </div> <!-- panel Default_Suite -->
+        <div panel-name="test-xml-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Command line suite&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Command line test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.epam.testng.CalculatorTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Command line test --&gt;
+&lt;/suite&gt; &lt;!-- Command line suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="test-xml-Default_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Default Suite&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.epam.testng.Listener&quot;/&gt;
+  &lt;/listeners&gt;
+&lt;/suite&gt; &lt;!-- Default Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Command line suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Command line test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Default_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Default Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Command line suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">PrimaryOperations</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyDiv</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyDivForException</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyMult</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyPow</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifySqrt</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifySub</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifySum</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">TrigonometricFunctions</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyCos</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyCtg</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifySin</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyTg</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Default_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Default Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Command line suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Command_line_suite');
+function tableData_Command_line_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(108);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'verifyCos')
+data.setCell(0, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(0, 3, 14);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verifyDiv')
+data.setCell(1, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(1, 3, 3);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verifyDiv')
+data.setCell(2, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(2, 3, 3);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verifyMult')
+data.setCell(3, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(3, 3, 2);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verifyCtg')
+data.setCell(4, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(4, 3, 2);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'verifySqrt')
+data.setCell(5, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(5, 3, 1);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'verifyMult')
+data.setCell(6, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(6, 3, 1);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'verifyDivForException')
+data.setCell(7, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(7, 3, 1);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'verifyPow')
+data.setCell(8, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(8, 3, 1);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'verifySum')
+data.setCell(9, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(9, 3, 1);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'verifySin')
+data.setCell(10, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(10, 3, 1);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'verifyDivForException')
+data.setCell(11, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(11, 3, 1);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'verifyPow')
+data.setCell(12, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(12, 3, 1);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'verifyMult')
+data.setCell(13, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(13, 3, 1);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'verifyIsNegative')
+data.setCell(14, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(14, 3, 1);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'verifyCos')
+data.setCell(15, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(15, 3, 1);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'verifyTg')
+data.setCell(16, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(16, 3, 1);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'verifyTg')
+data.setCell(17, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(17, 3, 1);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'verifyDiv')
+data.setCell(18, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(18, 3, 0);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'verifyMult')
+data.setCell(19, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(19, 3, 0);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'verifyMult')
+data.setCell(20, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(20, 3, 0);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'verifySin')
+data.setCell(21, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(21, 3, 0);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'verifySqrt')
+data.setCell(22, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(22, 3, 0);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'verifySum')
+data.setCell(23, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(23, 3, 0);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'verifySum')
+data.setCell(24, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(24, 3, 0);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'verifySin')
+data.setCell(25, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(25, 3, 0);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'verifyDivForException')
+data.setCell(26, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(26, 3, 0);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'verifyPow')
+data.setCell(27, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(27, 3, 0);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'verifySub')
+data.setCell(28, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(28, 3, 0);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'verifySub')
+data.setCell(29, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(29, 3, 0);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'verifyDiv')
+data.setCell(30, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(30, 3, 0);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'verifyIsPositive')
+data.setCell(31, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(31, 3, 0);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'verifyCtg')
+data.setCell(32, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(32, 3, 0);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'verifyIsPositive')
+data.setCell(33, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(33, 3, 0);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'verifyDiv')
+data.setCell(34, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(34, 3, 0);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'verifySub')
+data.setCell(35, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(35, 3, 0);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'verifyCtg')
+data.setCell(36, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(36, 3, 0);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'verifySub')
+data.setCell(37, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(37, 3, 0);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'verifyPow')
+data.setCell(38, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(38, 3, 0);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'verifySum')
+data.setCell(39, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(39, 3, 0);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 'verifyMult')
+data.setCell(40, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(40, 3, 0);
+data.setCell(41, 0, 41)
+data.setCell(41, 1, 'verifySum')
+data.setCell(41, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(41, 3, 0);
+data.setCell(42, 0, 42)
+data.setCell(42, 1, 'verifySub')
+data.setCell(42, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(42, 3, 0);
+data.setCell(43, 0, 43)
+data.setCell(43, 1, 'verifySum')
+data.setCell(43, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(43, 3, 0);
+data.setCell(44, 0, 44)
+data.setCell(44, 1, 'verifySqrt')
+data.setCell(44, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(44, 3, 0);
+data.setCell(45, 0, 45)
+data.setCell(45, 1, 'verifySum')
+data.setCell(45, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(45, 3, 0);
+data.setCell(46, 0, 46)
+data.setCell(46, 1, 'verifySub')
+data.setCell(46, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(46, 3, 0);
+data.setCell(47, 0, 47)
+data.setCell(47, 1, 'verifySum')
+data.setCell(47, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(47, 3, 0);
+data.setCell(48, 0, 48)
+data.setCell(48, 1, 'verifySum')
+data.setCell(48, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(48, 3, 0);
+data.setCell(49, 0, 49)
+data.setCell(49, 1, 'verifyMult')
+data.setCell(49, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(49, 3, 0);
+data.setCell(50, 0, 50)
+data.setCell(50, 1, 'verifyPow')
+data.setCell(50, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(50, 3, 0);
+data.setCell(51, 0, 51)
+data.setCell(51, 1, 'verifyMult')
+data.setCell(51, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(51, 3, 0);
+data.setCell(52, 0, 52)
+data.setCell(52, 1, 'verifyPow')
+data.setCell(52, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(52, 3, 0);
+data.setCell(53, 0, 53)
+data.setCell(53, 1, 'verifySum')
+data.setCell(53, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(53, 3, 0);
+data.setCell(54, 0, 54)
+data.setCell(54, 1, 'verifyIsPositive')
+data.setCell(54, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(54, 3, 0);
+data.setCell(55, 0, 55)
+data.setCell(55, 1, 'verifySum')
+data.setCell(55, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(55, 3, 0);
+data.setCell(56, 0, 56)
+data.setCell(56, 1, 'verifyDiv')
+data.setCell(56, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(56, 3, 0);
+data.setCell(57, 0, 57)
+data.setCell(57, 1, 'verifyMult')
+data.setCell(57, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(57, 3, 0);
+data.setCell(58, 0, 58)
+data.setCell(58, 1, 'verifySin')
+data.setCell(58, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(58, 3, 0);
+data.setCell(59, 0, 59)
+data.setCell(59, 1, 'verifyIsNegative')
+data.setCell(59, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(59, 3, 0);
+data.setCell(60, 0, 60)
+data.setCell(60, 1, 'verifyMult')
+data.setCell(60, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(60, 3, 0);
+data.setCell(61, 0, 61)
+data.setCell(61, 1, 'verifyDiv')
+data.setCell(61, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(61, 3, 0);
+data.setCell(62, 0, 62)
+data.setCell(62, 1, 'verifyDiv')
+data.setCell(62, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(62, 3, 0);
+data.setCell(63, 0, 63)
+data.setCell(63, 1, 'verifyIsNegative')
+data.setCell(63, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(63, 3, 0);
+data.setCell(64, 0, 64)
+data.setCell(64, 1, 'verifyMult')
+data.setCell(64, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(64, 3, 0);
+data.setCell(65, 0, 65)
+data.setCell(65, 1, 'verifySum')
+data.setCell(65, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(65, 3, 0);
+data.setCell(66, 0, 66)
+data.setCell(66, 1, 'verifyDiv')
+data.setCell(66, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(66, 3, 0);
+data.setCell(67, 0, 67)
+data.setCell(67, 1, 'verifyCtg')
+data.setCell(67, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(67, 3, 0);
+data.setCell(68, 0, 68)
+data.setCell(68, 1, 'verifySub')
+data.setCell(68, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(68, 3, 0);
+data.setCell(69, 0, 69)
+data.setCell(69, 1, 'verifySin')
+data.setCell(69, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(69, 3, 0);
+data.setCell(70, 0, 70)
+data.setCell(70, 1, 'verifySub')
+data.setCell(70, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(70, 3, 0);
+data.setCell(71, 0, 71)
+data.setCell(71, 1, 'verifySum')
+data.setCell(71, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(71, 3, 0);
+data.setCell(72, 0, 72)
+data.setCell(72, 1, 'verifySub')
+data.setCell(72, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(72, 3, 0);
+data.setCell(73, 0, 73)
+data.setCell(73, 1, 'verifySqrt')
+data.setCell(73, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(73, 3, 0);
+data.setCell(74, 0, 74)
+data.setCell(74, 1, 'verifyIsNegative')
+data.setCell(74, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(74, 3, 0);
+data.setCell(75, 0, 75)
+data.setCell(75, 1, 'verifySum')
+data.setCell(75, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(75, 3, 0);
+data.setCell(76, 0, 76)
+data.setCell(76, 1, 'verifySub')
+data.setCell(76, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(76, 3, 0);
+data.setCell(77, 0, 77)
+data.setCell(77, 1, 'verifyCtg')
+data.setCell(77, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(77, 3, 0);
+data.setCell(78, 0, 78)
+data.setCell(78, 1, 'verifyDivForException')
+data.setCell(78, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(78, 3, 0);
+data.setCell(79, 0, 79)
+data.setCell(79, 1, 'verifyMult')
+data.setCell(79, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(79, 3, 0);
+data.setCell(80, 0, 80)
+data.setCell(80, 1, 'verifyMult')
+data.setCell(80, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(80, 3, 0);
+data.setCell(81, 0, 81)
+data.setCell(81, 1, 'verifyIsNegative')
+data.setCell(81, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(81, 3, 0);
+data.setCell(82, 0, 82)
+data.setCell(82, 1, 'verifyMult')
+data.setCell(82, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(82, 3, 0);
+data.setCell(83, 0, 83)
+data.setCell(83, 1, 'verifyMult')
+data.setCell(83, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(83, 3, 0);
+data.setCell(84, 0, 84)
+data.setCell(84, 1, 'verifySqrt')
+data.setCell(84, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(84, 3, 0);
+data.setCell(85, 0, 85)
+data.setCell(85, 1, 'verifyMult')
+data.setCell(85, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(85, 3, 0);
+data.setCell(86, 0, 86)
+data.setCell(86, 1, 'verifySub')
+data.setCell(86, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(86, 3, 0);
+data.setCell(87, 0, 87)
+data.setCell(87, 1, 'verifyDiv')
+data.setCell(87, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(87, 3, 0);
+data.setCell(88, 0, 88)
+data.setCell(88, 1, 'verifySum')
+data.setCell(88, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(88, 3, 0);
+data.setCell(89, 0, 89)
+data.setCell(89, 1, 'verifySub')
+data.setCell(89, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(89, 3, 0);
+data.setCell(90, 0, 90)
+data.setCell(90, 1, 'verifyDiv')
+data.setCell(90, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(90, 3, 0);
+data.setCell(91, 0, 91)
+data.setCell(91, 1, 'verifySub')
+data.setCell(91, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(91, 3, 0);
+data.setCell(92, 0, 92)
+data.setCell(92, 1, 'verifySub')
+data.setCell(92, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(92, 3, 0);
+data.setCell(93, 0, 93)
+data.setCell(93, 1, 'verifySub')
+data.setCell(93, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(93, 3, 0);
+data.setCell(94, 0, 94)
+data.setCell(94, 1, 'verifyIsPositive')
+data.setCell(94, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(94, 3, 0);
+data.setCell(95, 0, 95)
+data.setCell(95, 1, 'verifyPow')
+data.setCell(95, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(95, 3, 0);
+data.setCell(96, 0, 96)
+data.setCell(96, 1, 'verifySub')
+data.setCell(96, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(96, 3, 0);
+data.setCell(97, 0, 97)
+data.setCell(97, 1, 'verifyDiv')
+data.setCell(97, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(97, 3, 0);
+data.setCell(98, 0, 98)
+data.setCell(98, 1, 'verifyIsPositive')
+data.setCell(98, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(98, 3, 0);
+data.setCell(99, 0, 99)
+data.setCell(99, 1, 'verifyDiv')
+data.setCell(99, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(99, 3, 0);
+data.setCell(100, 0, 100)
+data.setCell(100, 1, 'verifyPow')
+data.setCell(100, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(100, 3, 0);
+data.setCell(101, 0, 101)
+data.setCell(101, 1, 'verifySum')
+data.setCell(101, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(101, 3, 0);
+data.setCell(102, 0, 102)
+data.setCell(102, 1, 'verifyCos')
+data.setCell(102, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(102, 3, 0);
+data.setCell(103, 0, 103)
+data.setCell(103, 1, 'verifyCos')
+data.setCell(103, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(103, 3, 0);
+data.setCell(104, 0, 104)
+data.setCell(104, 1, 'verifyTg')
+data.setCell(104, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(104, 3, 0);
+data.setCell(105, 0, 105)
+data.setCell(105, 1, 'verifyTg')
+data.setCell(105, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(105, 3, 0);
+data.setCell(106, 0, 106)
+data.setCell(106, 1, 'verifyCos')
+data.setCell(106, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(106, 3, 0);
+data.setCell(107, 0, 107)
+data.setCell(107, 1, 'verifyTg')
+data.setCell(107, 2, 'com.epam.testng.CalculatorTest')
+data.setCell(107, 3, 0);
+window.suiteTableData['Command_line_suite']= { tableData: data, tableDiv: 'times-div-Command_line_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 37 ms</span>
+              <div id="times-div-Command_line_suite">
+              </div> <!-- times-div-Command_line_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Default_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Default Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Default_Suite');
+function tableData_Default_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(0);
+window.suiteTableData['Default_Suite']= { tableData: data, tableDiv: 'times-div-Default_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 0 ms</span>
+              <div id="times-div-Default_Suite">
+              </div> <!-- times-div-Default_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Command line suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Default_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Default Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Default_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.epam.testng.CalculatorTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyCos(30)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyCos(720)</span>
+                <span class="method-start">18 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyCos(0)</span>
+                <span class="method-start">19 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyCos(-45)</span>
+                <span class="method-start">20 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyCos(-420)</span>
+                <span class="method-start">21 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyCtg(30)</span>
+                <span class="method-start">24 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyCtg(720)</span>
+                <span class="method-start">25 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyCtg(0)</span>
+                <span class="method-start">25 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyCtg(-45)</span>
+                <span class="method-start">27 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyCtg(-420)</span>
+                <span class="method-start">28 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyDiv(2.5, 4.5)</span>
+                <span class="method-start">29 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyDiv(4.9E-324, 1.7976931348623157E308)</span>
+                <span class="method-start">33 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyDiv(0, 5.95)</span>
+                <span class="method-start">33 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyDiv(-5.5, 9)</span>
+                <span class="method-start">34 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyDiv(5.5, -9)</span>
+                <span class="method-start">34 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyDiv(1.7976931348623157E308, 4.9E-324)</span>
+                <span class="method-start">35 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyDiv(2, 6)</span>
+                <span class="method-start">35 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyDiv(0, 5)</span>
+                <span class="method-start">39 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyDiv(9223372036854775807, 9223372036854775807)</span>
+                <span class="method-start">40 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyDiv(-1, -4)</span>
+                <span class="method-start">41 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyDiv(-5, 3)</span>
+                <span class="method-start">41 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyDiv(5, -3)</span>
+                <span class="method-start">41 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyDiv(-9223372036854775808, -9223372036854775808)</span>
+                <span class="method-start">42 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyDivForException(5, 0)</span>
+                <span class="method-start">43 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyDivForException(0, 0)</span>
+                <span class="method-start">43 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyDivForException(5, 0)</span>
+                <span class="method-start">44 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyDivForException(0, 0)</span>
+                <span class="method-start">45 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyIsNegative(1)</span>
+                <span class="method-start">46 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyIsNegative(0)</span>
+                <span class="method-start">48 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyIsNegative(-1)</span>
+                <span class="method-start">48 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyIsNegative(-9223372036854775808)</span>
+                <span class="method-start">49 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyIsNegative(9223372036854775807)</span>
+                <span class="method-start">49 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyIsPositive(1)</span>
+                <span class="method-start">50 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyIsPositive(-9223372036854775808)</span>
+                <span class="method-start">51 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyIsPositive(0)</span>
+                <span class="method-start">51 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyIsPositive(-1)</span>
+                <span class="method-start">51 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyIsPositive(9223372036854775807)</span>
+                <span class="method-start">52 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyMult(2.5, 4.5)</span>
+                <span class="method-start">53 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyMult(1.7976931348623157E308, 1.7976931348623157E308)</span>
+                <span class="method-start">53 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyMult(5.95, 0)</span>
+                <span class="method-start">54 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyMult(0, 0)</span>
+                <span class="method-start">54 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyMult(0, 5.95)</span>
+                <span class="method-start">54 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyMult(5.5, -9)</span>
+                <span class="method-start">55 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyMult(-5.5, 9)</span>
+                <span class="method-start">55 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyMult(0, 5)</span>
+                <span class="method-start">56 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyMult(2, 6)</span>
+                <span class="method-start">56 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyMult(5, 0)</span>
+                <span class="method-start">56 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyMult(4.9E-324, 4.9E-324)</span>
+                <span class="method-start">56 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyMult(-5, 3)</span>
+                <span class="method-start">58 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyMult(5, -3)</span>
+                <span class="method-start">58 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyMult(-9223372036854775808, -9223372036854775808)</span>
+                <span class="method-start">58 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyMult(9223372036854775807, 9223372036854775807)</span>
+                <span class="method-start">58 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyMult(0, 0)</span>
+                <span class="method-start">59 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyPow(2.5, 4.5)</span>
+                <span class="method-start">60 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyPow(1.7976931348623157E308, 1.7976931348623157E308)</span>
+                <span class="method-start">61 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyPow(0, 5.95)</span>
+                <span class="method-start">61 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyPow(0, 0)</span>
+                <span class="method-start">61 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyPow(5.95, 0)</span>
+                <span class="method-start">61 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyPow(4.9E-324, 4.9E-324)</span>
+                <span class="method-start">62 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyPow(5.5, -9)</span>
+                <span class="method-start">62 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyPow(-5.5, 9)</span>
+                <span class="method-start">62 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifySin(30)</span>
+                <span class="method-start">63 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifySin(720)</span>
+                <span class="method-start">64 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifySin(0)</span>
+                <span class="method-start">65 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifySin(-45)</span>
+                <span class="method-start">65 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifySin(-420)</span>
+                <span class="method-start">66 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifySqrt(1.0)</span>
+                <span class="method-start">67 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifySqrt(1600)</span>
+                <span class="method-start">67 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifySqrt(25)</span>
+                <span class="method-start">67 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifySqrt(0)</span>
+                <span class="method-start">68 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifySqrt(-25)</span>
+                <span class="method-start">68 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifySub(1.7976931348623157E308, 1.7976931348623157E308)</span>
+                <span class="method-start">69 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifySub(2.5, 4.5)</span>
+                <span class="method-start">69 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifySub(0, 5.95)</span>
+                <span class="method-start">70 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifySub(5.95, 0)</span>
+                <span class="method-start">70 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifySub(0, 0)</span>
+                <span class="method-start">70 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifySub(5.5, -9)</span>
+                <span class="method-start">71 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifySub(4.9E-324, 4.9E-324)</span>
+                <span class="method-start">71 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifySub(-5.5, 9)</span>
+                <span class="method-start">71 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifySub(5, 0)</span>
+                <span class="method-start">72 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifySub(2, 6)</span>
+                <span class="method-start">72 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifySub(0, 5)</span>
+                <span class="method-start">73 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifySub(9223372036854775807, 9223372036854775807)</span>
+                <span class="method-start">73 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifySub(-5, 3)</span>
+                <span class="method-start">74 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifySub(-9223372036854775808, -9223372036854775808)</span>
+                <span class="method-start">74 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifySub(5, -3)</span>
+                <span class="method-start">75 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifySub(0, 0)</span>
+                <span class="method-start">75 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifySum(1.7976931348623157E308, 1.7976931348623157E308)</span>
+                <span class="method-start">76 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifySum(2.5, 4.5)</span>
+                <span class="method-start">76 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifySum(0, 0)</span>
+                <span class="method-start">77 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifySum(0, 5.95)</span>
+                <span class="method-start">77 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifySum(5.5, -9)</span>
+                <span class="method-start">77 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifySum(-5.5, 9)</span>
+                <span class="method-start">77 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifySum(5.95, 0)</span>
+                <span class="method-start">77 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifySum(4.9E-324, 4.9E-324)</span>
+                <span class="method-start">78 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifySum(2, 6)</span>
+                <span class="method-start">78 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifySum(5, 0)</span>
+                <span class="method-start">79 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifySum(0, 5)</span>
+                <span class="method-start">79 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifySum(9223372036854775807, 9223372036854775807)</span>
+                <span class="method-start">80 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifySum(5, -3)</span>
+                <span class="method-start">81 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifySum(0, 0)</span>
+                <span class="method-start">81 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifySum(-9223372036854775808, -9223372036854775808)</span>
+                <span class="method-start">81 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifySum(-5, 3)</span>
+                <span class="method-start">81 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyTg(30)</span>
+                <span class="method-start">82 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyTg(0)</span>
+                <span class="method-start">83 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyTg(720)</span>
+                <span class="method-start">83 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyTg(-45)</span>
+                <span class="method-start">83 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyTg(-420)</span>
+                <span class="method-start">84 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Default_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
